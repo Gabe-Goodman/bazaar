@@ -12,7 +12,7 @@ export const authOptions = {
   providers: [
     CredentialsProvider({
       name: 'Credentials',
-      credentials: {},
+      cre~dentials: {},
       async authorize(credentials): Promise<any> {
         return await signInWithEmailAndPassword(auth, (credentials as any).email || '', (credentials as any).password || '')
           .then(userCredential => {
